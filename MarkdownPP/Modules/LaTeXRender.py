@@ -13,7 +13,7 @@ codere = re.compile("^(    |\t)")
 spancodere = re.compile(r'(`[^`]+\`)') # code between backticks
 
 # Support for Pandoc style code blocks with attributes
-fencedcodere = re.compile("^((> *)?```\w*|(> *)?~~~~*(\s*{.*})?)$")
+fencedcodere = re.compile("^((> *)?```\w*|(> *)?~~~~*\s*({.*})?\s*)$")
 
 class LaTeXRender(Module):
 	"""
